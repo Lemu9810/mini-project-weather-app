@@ -1,5 +1,12 @@
 @import "reset.css";
 
+:root {
+  --l-size: 3em;
+  --m-size: 2em;
+  --s-size: 1.5em;
+  --xs-size: 0.8em;
+}
+
 .hidden {
   visibility: hidden;
 }
@@ -10,7 +17,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: rgb(36, 36, 36);
-  font-size: 13px;
+  font-size: var(--xs-size);
 }
 
 .weather-box {
@@ -37,40 +44,42 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
+}
+
+#icon {
+  width: 80%;
 }
 
 #temp {
-  font-size: 20px;
+  font-size: var(--l-size);
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-.weather-box__sub1 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-}
-
 #temp-min-max {
   display: block;
-  font-size: 10px;
+  margin-bottom: 5px;
 }
 
-.weather-box__sub2 {
+#city {
+  display: block;
+  font-size: var(--m-size);
+}
+
+.weather-box__sub {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.weather-box__sub2 div {
+.weather-box__sub div {
   width: 40%;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .weather-box__sub-title {
-  font-size: 8px;
   display: block;
   margin-bottom: 3px;
 }
@@ -81,6 +90,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 15px;
+  font-size: var(--m-size);
   font-weight: 600;
 }

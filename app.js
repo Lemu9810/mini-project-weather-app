@@ -4,8 +4,7 @@ const API_KEY = config.apiKey;
 const inputCity = document.querySelector(".weather-box__find input");
 const submitBtn = document.querySelector(".weather-box__find button");
 const box1 = document.querySelector(".weather-box__main");
-const box2 = document.querySelector(".weather-box__sub1");
-const box3 = document.querySelector(".weather-box__sub2");
+const box2 = document.querySelector(".weather-box__sub");
 
 const icon = document.getElementById("icon");
 const temp = document.getElementById("temp");
@@ -46,7 +45,6 @@ function printInfo(data) {
   noCity.classList.add("hidden");
   box1.classList.remove("hidden");
   box2.classList.remove("hidden");
-  box3.classList.remove("hidden");
 
   icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   temp.innerText = `${data.main.temp}°`;
@@ -60,5 +58,4 @@ function cityNotFound() {
   noCity.classList.remove("hidden");
   box1.classList.add("hidden");
   box2.classList.add("hidden");
-  box3.classList.add("hidden");
 }
