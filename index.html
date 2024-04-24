@@ -14,22 +14,28 @@
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
       </div>
+      <span id="alert" class="hidden">City Not Found</span>
 
-      <div class="weather-box__main">
+      <div class="weather-box__main hidden">
         <img src="" />
-        <span id="temperature">temperature</span>
-        <span id="city">city</span>
+        <span id="temp"></span>
+        <span id="city"></span>
       </div>
 
-      <div class="weather-box__sub">
+      <div class="weather-box__sub1 hidden">
+        <span id="temp-min"></span>
+        <span id="temp-max"></span>
+      </div>
+
+      <div class="weather-box__sub2 hidden">
         <div>
           <i class="fa-solid fa-water"></i>
-          <span id="humidity">53%</span>
+          <span id="humidity"></span>
           <span class="weather-box__sub-title">Humidity</span>
         </div>
         <div>
           <i class="fa-solid fa-wind"></i>
-          <span id="wind-speed">56km/h</span>
+          <span id="wind-speed"></span>
           <span class="weather-box__sub-title">Wind Speed</span>
         </div>
       </div>
