@@ -3,3 +3,17 @@
 .hidden {
   display: none;
 }
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(36, 36, 36);
+}
+
+.weather-box {
+  background-color: rgb(219, 219, 219);
+  padding: 15px;
+  border-radius: 15px;
+}
