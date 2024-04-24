@@ -1,7 +1,7 @@
 @import "reset.css";
 
 .hidden {
-  display: none;
+  visibility: hidden;
 }
 
 body {
@@ -10,10 +10,77 @@ body {
   align-items: center;
   justify-content: center;
   background-color: rgb(36, 36, 36);
+  font-size: 13px;
 }
 
 .weather-box {
   background-color: rgb(219, 219, 219);
   padding: 15px;
   border-radius: 15px;
+  position: relative;
+}
+
+.weather-box__find input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+
+.weather-box__find button {
+  border-radius: 10px;
+  padding: 3px 5px;
+  border: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.weather-box__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+#temp {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.weather-box__sub1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+#temp-min-max {
+  display: block;
+  font-size: 10px;
+}
+
+.weather-box__sub2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-box__sub2 div {
+  width: 40%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.weather-box__sub-title {
+  font-size: 8px;
+  display: block;
+  margin-bottom: 3px;
+}
+
+#noCity {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: 600;
 }

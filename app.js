@@ -10,8 +10,7 @@ const box3 = document.querySelector(".weather-box__sub2");
 const icon = document.getElementById("icon");
 const temp = document.getElementById("temp");
 const city = document.getElementById("city");
-const tempMin = document.getElementById("temp-min");
-const tempMax = document.getElementById("temp-max");
+const tempMinMax = document.getElementById("temp-min-max");
 const humidity = document.getElementById("humidity");
 const windSpeed = document.getElementById("wind-speed");
 const noCity = document.getElementById("noCity");
@@ -52,8 +51,7 @@ function printInfo(data) {
   icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   temp.innerText = `${data.main.temp}°`;
   city.innerText = data.name;
-  tempMin.innerText = `${data.main.temp_min}°`;
-  tempMax.innerText = `${data.main.temp_max}°`;
+  tempMinMax.innerText = `${data.main.temp_min}° / ${data.main.temp_max}°`;
   humidity.innerText = `${data.main.humidity}%`;
   windSpeed.innerText = `${data.wind.speed}km/h`;
 }

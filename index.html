@@ -10,7 +10,12 @@
     <div class="weather-box">
       <div class="weather-box__find">
         <form>
-          <input type="text" placeholder="write city" maxlength="15" required />
+          <input
+            type="text"
+            placeholder="Write city name"
+            maxlength="15"
+            required
+          />
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
       </div>
@@ -23,20 +28,19 @@
       </div>
 
       <div class="weather-box__sub1 hidden">
-        <span id="temp-min"></span>
-        <span id="temp-max"></span>
+        <span id="temp-min-max"></span>
       </div>
 
       <div class="weather-box__sub2 hidden">
         <div>
+          <span class="weather-box__sub-title">Humidity</span>
           <i class="fa-solid fa-water"></i>
           <span id="humidity"></span>
-          <span class="weather-box__sub-title">Humidity</span>
         </div>
         <div>
+          <span class="weather-box__sub-title">Wind Speed</span>
           <i class="fa-solid fa-wind"></i>
           <span id="wind-speed"></span>
-          <span class="weather-box__sub-title">Wind Speed</span>
         </div>
       </div>
     </div>
