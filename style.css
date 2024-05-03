@@ -1,10 +1,10 @@
 @import "reset.css";
 
 :root {
-  --l-size: 3em;
-  --m-size: 2em;
-  --s-size: 1.5em;
-  --xs-size: 0.8em;
+  --l-size: 2.5rem;
+  --m-size: 2rem;
+  --s-size: 1.5rem;
+  --xs-size: 0.7rem;
 }
 
 .hidden {
@@ -13,11 +13,11 @@
 
 body {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: rgb(36, 36, 36);
   font-size: var(--xs-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .weather-box {
@@ -25,6 +25,9 @@ body {
   padding: 15px;
   border-radius: 15px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .weather-box__find input {
